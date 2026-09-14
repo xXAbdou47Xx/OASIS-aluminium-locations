@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OASIS Aluminium — Locations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --indigo:#312782;        /* page background */
+    --indigo-dark:#271E69;
+    --sky:#35A8E0;           /* accent */
+    --gray:#C6C6C5;          /* secondary text */
+    --card:rgba(255,255,255,.08);
+    --card-hover:rgba(255,255,255,.16);
+    --card-border:rgba(255,255,255,.20);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--indigo);
+    font-family:Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    justify-content:center;
+  }
+  .page{
+    width:100%;
+    max-width:420px;
+    padding:56px 24px 32px;
+    display:flex;
+    flex-direction:column;
+  }
+  .head{display:flex;flex-direction:column;align-items:center;gap:22px}
+  .head img{width:148px;height:auto;display:block}
+  .rule{width:40px;height:3px;border-radius:2px;background:var(--sky)}
+  .tagline{font-size:15px;line-height:1.5;color:var(--gray);text-align:center;max-width:250px;margin:0}
+  .links{display:flex;flex-direction:column;gap:14px;margin-top:44px}
+  .link{
+    display:flex;align-items:center;gap:16px;
+    padding:20px;border-radius:18px;
+    background:var(--card);
+    border:1px solid var(--card-border);
+    text-decoration:none;
+    transition:background .15s ease,border-color .15s ease;
+    min-height:64px;
+  }
+  .link:hover,.link:focus-visible{background:var(--card-hover);border-color:var(--sky);outline:none}
+  .link img{width:22px;height:auto;opacity:.9;flex:none}
+  .labels{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+  .title{font-size:17px;font-weight:600;color:#fff}
+  .sub{font-size:13px;color:var(--gray)}
+  .chev{
+    width:34px;height:34px;border-radius:50%;background:var(--sky);
+    display:flex;align-items:center;justify-content:center;flex:none;
+  }
+  .chev i{
+    width:8px;height:8px;display:block;margin-left:-2px;
+    border-top:2px solid #fff;border-right:2px solid #fff;
+    transform:rotate(45deg);
+  }
+  .spacer{flex:1}
+  footer{
+    font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+    color:rgba(255,255,255,.5);text-align:center;padding-top:36px;
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <div class="head">
+      <img src="assets/lockup-white.png" alt="OASIS Aluminium">
+      <div class="rule"></div>
+      <p class="tagline">Choose a location to get directions</p>
+    </div>
+
+    <nav class="links">
+      <a class="link" href="BUTTON_1_URL">
+        <img src="assets/mark-white.png" alt="">
+        <span class="labels">
+          <span class="title">BUTTON_1_TEXT</span>
+          <span class="sub">LOCATION_1_AREA</span>
+        </span>
+        <span class="chev"><i></i></span>
+      </a>
+      <a class="link" href="BUTTON_2_URL">
+        <img src="assets/mark-white.png" alt="">
+        <span class="labels">
+          <span class="title">BUTTON_2_TEXT</span>
+          <span class="sub">LOCATION_2_AREA</span>
+        </span>
+        <span class="chev"><i></i></span>
+      </a>
+      <a class="link" href="BUTTON_3_URL">
+        <img src="assets/mark-white.png" alt="">
+        <span class="labels">
+          <span class="title">BUTTON_3_TEXT</span>
+          <span class="sub">LOCATION_3_AREA</span>
+        </span>
+        <span class="chev"><i></i></span>
+      </a>
+    </nav>
+
+    <div class="spacer"></div>
+    <footer>OASIS Aluminium</footer>
+  </main>
+</body>
+</html>

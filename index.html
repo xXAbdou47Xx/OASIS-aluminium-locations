@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OASIS Aluminium — Locations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --indigo:#312782;        /* page background */
+    --indigo-dark:#271E69;
+    --sky:#35A8E0;           /* accent */
+    --gray:#C6C6C5;          /* secondary text */
+    --card:rgba(255,255,255,.08);
+    --card-hover:rgba(255,255,255,.16);
+    --card-border:rgba(255,255,255,.20);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--indigo);
+    font-family:Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    justify-content:center;
+  }
+  .page{
+    width:100%;
+    max-width:420px;
+    padding:56px 24px 32px;
+    display:flex;
+    flex-direction:column;
+  }
+  .head{display:flex;flex-direction:column;align-items:center;gap:22px}
+  .head img{width:148px;height:auto;display:block}
+  .rule{width:40px;height:3px;border-radius:2px;background:var(--sky)}
+  .tagline{font-size:15px;line-height:1.5;color:var(--gray);text-align:center;max-width:250px;margin:0}
+  .links{display:flex;flex-direction:column;gap:14px;margin-top:44px}
+  .link{
+    display:flex;align-items:center;gap:16px;
+    padding:20px;border-radius:18px;
+    background:var(--card);
+    border:1px solid var(--card-border);
+    text-decoration:none;
+    transition:background .15s ease,border-color .15s ease;
+    min-height:64px;
+  }
+  .link:hover,.link:focus-visible{background:var(--card-hover);border-color:var(--sky);outline:none}
+  .link img{width:22px;height:auto;opacity:.9;flex:none}
+  .labels{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+  .title{font-size:17px;font-weight:600;color:#fff}
+  .sub{font-size:13px;color:var(--gray)}
+  .chev{
+    width:34px;height:34px;border-radius:50%;background:var(--sky);
+    display:flex;align-items:center;justify-content:center;flex:none;
+  }
+  .chev i{
+    width:8px;height:8px;display:block;margin-left:-2px;
+    border-top:2px solid #fff;border-right:2px solid #fff;
+    transform:rotate(45deg);
+  }
+  .spacer{flex:1}
+  footer{
+    font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+    color:rgba(255,255,255,.5);text-align:center;padding-top:36px;
+  }
+
+  html[dir="rtl"] body{font-family:"Segoe UI",Tahoma,Arial,sans-serif}
+  html[dir="rtl"] .chev i{
+    margin-left:0;margin-right:-2px;
+    transform:rotate(-135deg);
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <div class="head">
+      <img src="assets/lockup-white.png" alt="OASIS Aluminium">
+      <div class="rule"></div>
+      <p class="tagline" data-i18n="tagline">Choose a location to get directions</p>
+    </div>
+
+    <nav class="links">
+      <a class="link" href="https://maps.app.goo.gl/DfQTVddPWWaigMFn6">
+        <img src="assets/mark-white.png" alt="">
+        <span class="labels">
+          <span class="title" data-i18n="loc1_title">Head Office &amp; Retail Store</span>
+          <span class="sub" data-i18n="loc1_sub">Hammedi</span>
+        </span>
+        <span class="chev"><i></i></span>
+      </a>
+      <a class="link" href="https://goo.gl/maps/Vb5nVPqWBfWjYGHQ7?g_st=awb">
+        <img src="assets/mark-white.png" alt="">
+        <span class="labels">
+          <span class="title" data-i18n="loc2_title">Wholesale Outlet</span>
+          <span class="sub" data-i18n="loc2_sub">Hammedi</span>
+        </span>
+        <span class="chev"><i></i></span>
+      </a>
+      <a class="link" href="https://maps.app.goo.gl/MgZQAzYVnBSGajft6?g_st=awb">
+        <img src="assets/mark-white.png" alt="">
+        <span class="labels">
+          <span class="title" data-i18n="loc3_title">Production Unit</span>
+          <span class="sub" data-i18n="loc3_sub">Ouled Ali</span>
+        </span>
+        <span class="chev"><i></i></span>
+      </a>
+    </nav>
+
+    <div class="spacer"></div>
+    <footer>OASIS Aluminium</footer>
+  </main>
+
+  <script>
+  (function(){
+    var translations = {
+      en: {
+        tagline: "Choose a location to get directions",
+        loc1_title: "Head Office & Retail Store",
+        loc1_sub: "Hammedi",
+        loc2_title: "Wholesale Outlet",
+        loc2_sub: "Hammedi",
+        loc3_title: "Production Unit",
+        loc3_sub: "Ouled Ali"
+      },
+      fr: {
+        tagline: "Choisissez un emplacement pour obtenir l’itinéraire",
+        loc1_title: "Siège Social & Point de Vente",
+        loc1_sub: "Hammedi",
+        loc2_title: "Point de Vente en Gros",
+        loc2_sub: "Hammedi",
+        loc3_title: "Unité de Production",
+        loc3_sub: "Ouled Ali"
+      },
+      ar: {
+        tagline: "اختر موقعًا للحصول على الاتجاهات",
+        loc1_title: "المقر الرئيسي ونقطة البيع",
+        loc1_sub: "حمادي",
+        loc2_title: "نقطة البيع بالجملة",
+        loc2_sub: "حمادي",
+        loc3_title: "وحدة الإنتاج",
+        loc3_sub: "ولاد علي"
+      }
+    };
+
+    var supported = ["en", "fr", "ar"];
+    var override = new URLSearchParams(location.search).get("lang");
+    var raw = (override || navigator.language || navigator.userLanguage || "en").toLowerCase();
+    var short = raw.slice(0, 2);
+    var lang = supported.indexOf(short) !== -1 ? short : "en";
+    var dict = translations[lang];
+
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+    var nodes = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < nodes.length; i++) {
+      var key = nodes[i].getAttribute("data-i18n");
+      if (dict[key]) nodes[i].textContent = dict[key];
+    }
+  })();
+  </script>
+</body>
+</html>
